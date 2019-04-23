@@ -4,7 +4,7 @@
 @section('content')
 
 
-    <div id="target">鎖骨</div>
+    <div class="target">鎖骨</div>
     <script type="text/javascript">
         $(document).snowfall({
             flakeCount : 100,  //要素の数
@@ -26,21 +26,15 @@
             }
 
         });
-
-        $(document).ready(function() {
-            $('target').hover(function() {
-                $(this).trigger('startRumble')
-            }, function() {
-                $(this).trigger('stopRumble')
-            });
-
-
-            // $("#target").jrumble({
-            //     x: 3,
-            //     y: 3
-            // });
-        })
-
+        $(function(){
+            $('.target')
+                .jrumble({ x:8, y:8, rotation:4 })
+                .hover(function(){
+                    $(this).trigger('startRumble');
+                }, function(){
+                    $(this).trigger('stopRumble');
+                });
+        });
     </script>
     {{ link_to_route('categories.create', '新規登録',[], ['class' => 'btn btn-primary'])}}
     <table class="table table-striped">

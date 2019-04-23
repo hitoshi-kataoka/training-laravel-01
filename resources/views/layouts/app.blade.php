@@ -10,7 +10,9 @@
     <link href="{{ asset('css/snow.css') }}" rel="stylesheet" type="text/css">
 {{--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>--}}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
+
 
 
     <script type="text/javascript" src="{{ asset('js/snowfall.jquery.js') }}"></script>
