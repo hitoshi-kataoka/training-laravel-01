@@ -1,0 +1,64 @@
+table {
+    color: #ff6359;
+}
+h1 {
+    color: #ff6359;
+    font-size: 48px;
+}
+h1:before {content:"★";}
+h1:after {content:"★";}
+div{
+    background: hotpink;
+}
+a{
+    background: #c9e2b3;
+    color: yellow;
+}
+table{
+    background: lawngreen;
+    color: blueviolet;
+}
+.tab1{
+    background: orange;
+}
+
+h1 {
+    display: inline;
+    background: skyblue;
+    color:white;
+}
+button{
+    background: maroon;
+    color: red;
+}
+
+.style_01 {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #43a047;
+}
+.cp_hr07 {
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    color: #f06292;
+    border-width: 3px 0 0 0;
+    border-style: double;
+    border-color: #f06292;
+}
+.cp_hr01::after
+}
+{
+    position: absolute
+;
+    top: -0.7em
+;
+    left: 50%
+;
+    display: inline-block
+;
+    content: '61'
+;
+    background: #ffffff
+;
+}

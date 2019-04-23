@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('/items','CategoryController@index');
+Route::resource('items', 'ItemController');
+Route::resource('categories', 'CategoryController');
