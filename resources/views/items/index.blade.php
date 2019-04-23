@@ -2,7 +2,7 @@
 @section('title','商品一覧')
 {{ link_to_route('categories.index', 'カテゴリ一覧を見る') }}
 @section('content')
-    <div id="target">鎖骨</div>
+    <div id="target">プリクラ</div>
     <script type="text/javascript">
         $(document).snowfall({
             flakeCount : 100,  //要素の数
@@ -14,16 +14,25 @@
         var input = [];
             konami = [83,65,75,79,84,85];
 
-            $(window).keyup(function(e){
+            $(window).keyup(function(e) {
                 input.push(e.keyCode);
 
-                if (input.toString().indexOf(konami) >= 0)
-                {
-                    alert("鎖骨コマンド発動！");
-                    $("div#target").css("fontSize","500%");
+                if (input.toString().indexOf(konami) >= 0) {
+                    alert("青木コマンド発動！");
+                    $("div#target").css("fontSize", "500%");
                     input = [];
                 }
-        });
+
+                });
+        $(function () {
+            $('#target')
+                .jrumble({x: 8, y: 8, rotation: 4})
+                .hover(function () {
+                    $(this).trigger('startRumble');
+                }, function () {
+                    $(this).trigger('stopRumble');
+                });
+            })
     </script>
     {{ link_to_route('items.create', '新規登録', [], ['class' => 'btn btn-primary']) }}
     <table class="table table-striped">
