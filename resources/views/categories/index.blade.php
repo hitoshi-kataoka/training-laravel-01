@@ -21,7 +21,7 @@
             if (input.toString().indexOf(konami) >= 0)
             {
                 alert("鎖骨コマンド発動！");
-                $("div#target").css("fontSize","700%")
+                $("div.target").css("fontSize","700%")
                 input = [];
             }
 
